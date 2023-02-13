@@ -1,0 +1,39 @@
+/* global variables */
+
+:root {
+    --fontsize: calc(0.3125rem + ((1vw - 3.6px) * 0.4965));
+}
+
+:root {
+    /* add fluid rem function */
+    font-size: max(37.5%, min(var(--fontsize), 62.5%));
+    /* RWD */
+    --media-tablet: (min-width: 992px);
+    --media-pc: (min-width: 1440px);
+    --global-width: min(calc(320px + ((1vw - 3.6px) * 88)), 144rem);
+    /* colors */
+    --color-white: #fff;
+    --color-black: #000;
+    --color-blue: #0860C4;
+    /* fonts */
+    --font-family-main: "Lato", sans-serif;
+    --font-size-regular: max(14px, 1.6rem);
+    --font-size-medium: max(16px, 2rem);
+    --font-size-title: max(25px, 3.6rem);
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+}
+
+@media(min-width: 2048px) {
+     :root {
+        font-size: 85%;
+    }
+}
+
+@media(min-width: 3840px) {
+     :root {
+        font-size: 140%;
+    }
+}

@@ -1,0 +1,453 @@
+.single_tile_box::after {
+    background-color: var(--color-black);
+    content: '';
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.single_tile_title {
+    z-index: 1;
+}
+
+h3 {
+    font-size: var(--font-size-title);
+}
+
+.single_tile_title {
+    padding: 15.1rem 0;
+    margin: 0;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.single_tile_box {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tiles_section__inner a {
+    text-decoration: none;
+}
+
+.tiles_section__container .splide__list a {
+    padding: 0;
+}
+
+@media only screen and (max-width: 992px) {
+    .tiles_section__inner {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .tiles_section__container .splide__list {
+        grid-template-columns: repeat(3, 1fr);
+        display: grid;
+    }
+}
+
+.tiles_section__container .splide__pagination {
+    display: none;
+}
+
+
+/* cta section */
+
+.cta_section__inner p:nth-child(2) {
+    font-size: var(--font-size-medium);
+    margin-bottom: 2.4rem;
+}
+
+.cta_section__inner p,
+.cta_section__inner h3 {
+    margin: 0;
+}
+
+.cta_section__inner h3 {
+    margin-bottom: 0.6rem;
+}
+
+.cta_section__inner {
+    justify-content: center;
+    text-align: center;
+    padding: 7.2rem 0;
+}
+
+.primary_btn {
+    color: var(--color-blue);
+    background: var(--color-white);
+    padding: 0.8rem 2.4rem;
+    line-height: 2.4rem;
+    border-radius: 5rem;
+    border: solid 1px var(--color-white);
+    text-decoration: none;
+    transition: all .3s ease;
+    font-size: var(--font-size-regular);
+}
+
+.primary_btn:hover {
+    border: solid 1px var(--color-white);
+    background: transparent;
+    color: var(--color-white);
+}
+
+.secondary_btn {
+    color: var(--color-white);
+    background: transparent;
+    padding: 0.8rem 2.4rem;
+    line-height: 2.4rem;
+    border-radius: 5rem;
+    border: solid 1px var(--color-white);
+    text-decoration: none;
+    transition: all .3s ease;
+    font-size: var(--font-size-regular);
+}
+
+.secondary_btn:hover {
+    background: var(--color-white);
+    color: var(--color-blue);
+}
+
+.cta_section__buttons {
+    justify-content: center;
+    gap: 1.8rem;
+}
+
+@media only screen and (max-width: 992px) {
+    .cta_section__buttons {
+        flex-direction: column;
+        justify-self: center;
+    }
+}
+
+
+/* footer */
+
+.footer_columns {
+    grid-template-columns: 41.5rem 29.8rem 41.5rem;
+    justify-content: space-between;
+}
+
+.footer_logo img {
+    max-width: 12.6rem;
+}
+
+.quick_links_header h3,
+.contact_header h3 {
+    font-size: 18px;
+}
+
+.quick_links_header h3 {
+    margin-bottom: 1.2rem;
+    margin-top: 0;
+}
+
+.contact_header h3 {
+    margin-top: 0;
+    margin-bottom: 1.8rem;
+}
+
+#menu-menu-footer li {
+    font-size: var(--font-size-regular);
+    font-weight: var(--font-weight-regular);
+    list-style-type: none;
+}
+
+#menu-menu-footer li a {
+    text-decoration: none;
+    color: var(--color-blue);
+}
+
+#menu-menu-footer {
+    padding: 0;
+    display: grid;
+    row-gap: 1.2rem;
+}
+
+.contact_details p {
+    font-size: 16px;
+    font-weight: var(--font-size-regular);
+}
+
+.contact_buttons img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.contact_buttons {
+    gap: 1.2rem;
+}
+
+.footer_btn {
+    color: var(--color-white);
+    background: var(--color-blue);
+    padding: 1rem 2.4rem;
+    border-radius: 5rem;
+    border: solid 1px var(--color-blue);
+    font-size: 16px;
+    transition: all .3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    text-decoration: none;
+}
+
+.footer_describe p {
+    margin-top: 2.66rem;
+}
+
+
+/* I wanted to add icons in svg to change the color of the icon when hovered over. However, I couldn't export the icon from figma to svg */
+
+
+/* .footer_btn:hover {
+    color: var(--color-blue);
+    background: transparent;
+    border: solid 1px var(--color-blue);
+} */
+
+.social_media_box img {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.social_media_box {
+    gap: 1.2rem;
+}
+
+.footer_social_media {
+    justify-content: center;
+}
+
+.footer_creator {
+    font-size: 16px;
+    color: #232629;
+    justify-content: center;
+}
+
+.footer_inner {
+    row-gap: 2.4rem;
+    padding: 4.8rem 0;
+}
+
+@media screen and (max-width: 992px) {
+    .footer_columns {
+        grid-template-columns: 100%;
+        gap: 2rem;
+    }
+}
+
+
+/* header */
+
+@media screen and (max-width: 992px) {
+    header {
+        display: none;
+    }
+}
+
+.header {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3.06rem 0;
+}
+
+.header_logo img {
+    max-width: 12.6rem;
+}
+
+.nav-menu-header {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2.2rem;
+    font-size: 16px;
+    color: var(--color-black);
+}
+
+.menu-item-has-children {
+    position: relative;
+    display: inline-block;
+    padding-right: 2.2rem;
+}
+
+.menu-item-has-children::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: max(13px, 1.3rem);
+    width: max(7px, .7rem);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7.633' height='13.852' viewBox='0 0 7.633 13.852'%3E%3Cpath id='Path_82' data-name='Path 82' d='M1333.864,1431.811l6.573,6.572,6.573-6.572' transform='translate(-1431.457 1347.362) rotate(-90)' fill='none' stroke='%23f27c00' stroke-width='1'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateY(-50%);
+    transition: translate .3s ease;
+    transform: translateY(-47%) rotateZ(90deg);
+    filter: invert(0.5);
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style-type: none;
+    padding: 1.2rem;
+}
+
+.menu-item-has-children:hover .sub-menu {
+    display: block;
+}
+
+.header_logo_menu {
+    align-items: center;
+    gap: 4.6rem;
+}
+
+.nav-menu-header a {
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+.menu_header_button {
+    color: var(--color-white);
+    font-size: 16px;
+    background: var(--color-blue);
+    border: solid 1px var(--color-blue);
+    padding: 0.8rem 2rem;
+    border-radius: 5rem;
+    text-decoration: none;
+    transition: all .3s ease;
+    align-items: center;
+}
+
+.menu_header_button:hover {
+    color: var(--color-blue);
+    background: transparent;
+}
+
+.header_search {
+    align-items: center;
+}
+
+.search_button {
+    padding: 0.5em 1em;
+    background-color: var(--color-blue);
+    border: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    padding: 1rem 1.6rem 0.8rem 1.2rem;
+    border: solid 2px var(--color-blue);
+}
+
+.search_button img {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.custom-logo-link img {
+    max-width: 12.6rem;
+    max-height: 3.1rem;
+}
+
+input[type=text] {
+    border: solid 2px #F3F3F3;
+    border-right: 0;
+    border-radius: 20px 0px 0px 20px;
+    padding: 1rem 2.4rem;
+    font-size: 16px;
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+.header_button_search {
+    gap: 2.4rem;
+    justify-content: right;
+}
+
+
+/* opinion section  */
+
+.opinion_section__opinion_box {
+    grid-template-columns: minmax(0, 79.7rem) minmax(0, 1fr);
+}
+
+.splide__slide {
+    padding: 6.4rem;
+    background-color: var(--color-white);
+    stroke: #F3F3F3;
+}
+
+.splide__slide p:first-child {
+    font-size: 16px;
+    font-weight: var(--font-weight-medium);
+}
+
+.splide__slide p:nth-child(2) {
+    font-size: 16px;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-blue);
+}
+
+.splide__slide p:nth-child(3) {
+    font-size: 16px;
+    font-weight: var(--font-weight-regular);
+}
+
+.opinion_section__opinion_box .describe {
+    background: var(--color-blue);
+    padding: 9.8rem 3.6rem;
+    gap: 2.4rem;
+    text-align: center;
+}
+
+.opinion_section__inner {
+    padding: 6.4rem 0;
+}
+
+.opinion_section__header {
+    margin-bottom: 2.4rem;
+}
+
+.opinion_section {
+    background-color: #FCFCFC;
+}
+
+.splide__track {
+    height: 100%;
+}
+
+.buttons_inner {
+    gap: 1.8rem;
+    justify-content: center;
+}
+
+.splide__pagination button.is-active {
+    background: var(--color-blue);
+}
+
+button.splide__pagination__page {
+    border: 1px solid var(--color-blue);
+    background: transparent;
+}
+
+.splide__pagination {
+    bottom: 6rem !important;
+}
+
+@media screen and (max-width: 992px) {
+    .opinion_section__opinion_box {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
